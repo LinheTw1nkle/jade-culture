@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>온윤천년</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style_kr.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav-wrap">
+
+    <div class="logo">
+      <a href="index.html">온윤천년</a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="intro_kr.html">옥의 소개</a></li>
+        <li><a href="history_kr.html">역사 타임라인</a></li>
+        <li><a href="culture_kr.html">옥의 문화</a></li>
+        <li><a href="craft_kr.html">제작 공예</a></li>
+      </ul>
+    </nav>
+    <button class="lang-btn" onclick="switchLanguage()">中文 / 한국어</button>
+
+  </div>
+</header>
+
+<section class="hero" id="home">
+    
+  <div class="hero-noise"></div>
+
+  <div class="container hero-inner">
+
+    <!-- 左侧内容 -->
+    <div class="hero-content">
+
+      <div class="hero-sub">
+        CHINESE JADE CULTURE
+      </div>
+
+      <h1>
+        溫潤千年
+      </h1>
+
+      <h2>
+        중국 옥 문화 전시
+      </h2>
+
+      <div class="hero-line"></div>
+
+      <p class="hero-desc">
+        옥은 단순한 장식이 아니다.
+        <br>
+        동양 문화 속에서,
+        정신성과 절제된 아름다움을 상징해 왔다.
+      </p>
+
+    </div>
+
+    <!-- 右下角信息 -->
+    <div class="hero-side-note">
+
+      <span class="note-label">
+        EASTERN AESTHETICS
+      </span>
+
+      <p>
+        옥(玉)은 수천 년 동안
+        권위 · 품격 · 정신성을 상징해 왔다.
+      </p>
+
+    </div>
+
+    <!-- 滚动提示 -->
+    <div class="scroll-indicator">
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  function switchLanguage() {
+    const currentPage = window.location.pathname.split("/").pop();
+
+    if (currentPage.includes("_kr")) {
+        window.location.href = currentPage.replace("_kr", "_cn");
+    } else if (currentPage.includes("_cn")) {
+        window.location.href = currentPage.replace("_cn", "_kr");
+    } else if (currentPage === "index.html") {
+        window.location.href = "index_cn.html";
+    }
+}
+</script>
+
+</body>
+</html>

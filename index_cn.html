@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>温润千年</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style_cn.css">
+</head>
+
+<body>
+
+<header>
+  <div class="container nav-wrap">
+
+    <div class="logo">
+      <a href="index_cn.html">温润千年</a>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="intro_cn.html">玉是什么</a></li>
+        <li><a href="history_cn.html">玉器发展史</a></li>
+        <li><a href="culture_cn.html">玉的文化</a></li>
+        <li><a href="craft_cn.html">制作工艺</a></li>
+      </ul>
+    </nav>
+    <button class="lang-btn" onclick="switchLanguage()">中文 / 한국어</button>
+
+  </div>
+</header>
+
+<section class="hero" id="home">
+    
+  <div class="hero-noise"></div>
+
+  <div class="container hero-inner">
+
+    <!-- 左侧内容 -->
+    <div class="hero-content">
+
+      <div class="hero-sub">
+        CHINESE JADE CULTURE
+      </div>
+
+      <h1>
+        温润千年
+      </h1>
+
+      <h2>
+        中国“玉”文化展示
+      </h2>
+
+      <div class="hero-line"></div>
+
+      <p class="hero-desc">
+        玉不仅仅是一种装饰品。
+        <br>
+        在东方文化中，
+        它始终象征着精神价值与含蓄内敛的美。
+      </p>
+
+    </div>
+
+    <!-- 右下角信息 -->
+    <div class="hero-side-note">
+
+      <span class="note-label">
+        EASTERN AESTHETICS
+      </span>
+
+      <p>
+        玉（Jade）在数千年的历史长河中，
+        始终象征着权威、品格与精神境界。
+      </p>
+
+    </div>
+
+    <!-- 滚动提示 -->
+    <div class="scroll-indicator">
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+  function switchLanguage(){
+    const currentPage = window.location.pathname.split("/").pop();
+
+    if(currentPage.includes("_cn")){
+      window.location.href = currentPage.replace("_cn", "");
+    }else if(currentPage.includes("")){
+      window.location.href = currentPage.replace("", "_cn");
+    }
+  }
+</script>
+
+</body>
+</html>
